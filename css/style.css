@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  max-width: 21%;
+  padding: 15px;
+  width: fit-content;
+  min-width: 220px;
+  border-radius: 0.7rem;
+  box-shadow: 3px 3px 7px 0px rgba(0.078, 0.078, 0.078, 0.5);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 150px;
+  border-radius: 0.3rem;
+}
+
+.imagewrapper {
+  position: relative;
+}
+
+.view {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0.7;
+  padding: 42%;
+  border-radius: 0.3rem;
+}
+
+.image:hover + .view,
+.image:focus + .view {
+  display: block;
+}
+
+.info {
+  text-align: left;
+  margin-top: 15px;
+}
+.equilibrium {
+  color: hsl(0, 0%, 100%);
+  font-weight: 6oo;
+  font-size: 18px;
+}
+.equilibrium:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.collection {
+  color: hsl(215, 32%, 27%);
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.eth {
+  display: flex;
+  justify-content: space-between;
+  font-family: 400;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.amount {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.days {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: hsl(215, 32%, 27%);
+}
+
+.border {
+  border-top: 1px solid hsl(215, 32%, 27%);
+  margin-top: 15px;
+}
+
+.creatorInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.jules {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 30px;
+}
+
+.imageinfo {
+  color: hsl(215, 32%, 27%);
+}
+
+.creation {
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+.creation:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media only screen and (max-width: 425px) {
+  .wrapper {
+    max-width: 70%;
+    padding: 20px;
+  }
+}
